@@ -3,6 +3,13 @@ export enum USER_ROLES {
     ADMIN = "ADMIN"
 }
 
+// essa interface também pode ser alocada para outro arquivo
+export interface TokenPayload {
+    id: string,
+		name: string,
+    role: USER_ROLES
+}
+
 export interface UserDB {
     id: string,
     name: string,
